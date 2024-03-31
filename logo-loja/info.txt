@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Redressed
+font link: https://fonts.google.com/specimen/Redressed
+font author: Astigmatic
+font author site: http://www.astigmatic.com/
+
+
+icon designer: Icons By Alfredo
+icon designer link: /AlfredoCreates
+        
+{"bg":"transparent","icon-gradient-0":"#5F2517","icon-gradient-1":"#FFEDB5","font":"#000000","slogan":"#141414"}
+      
