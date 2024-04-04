@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html style="height: 100%;margin:0;" lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>Loja de instrumentos Musicais</title>
-</head>
-<body style="min-height: 100vh;padding:0;margin: 0 auto;box-sizing: border-box;">
-    
-    
-    <!--cabeçalho-->
-    <header style="width: 100%; height: 80px; background-color:rgb(15, 15, 15);position:fixed;display:flex;">     
-        <div style="background-color: rgb(255, 255, 255); width:110px; height:70px;padding-top:8px;padding-left:1em;">
-            <a style="text-decoration: none;" href="">
-                <img href="" src="/Loja-de-Instrumentos-Musicais/logo-loja/violao.png" alt="logo" width="100">
-            </a>
-        </div> 
-        <div style="margin-left: 1em;">
-            <h1 style="color: azure;">Music Store</h1> 
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <title>Loja de instrumentos Musicais</title>
+    </head>
+    <body style="min-height: 100vh;padding:0;margin: 0 auto;box-sizing: border-box;">
+        
+        
+        <!--cabeçalho-->
+        <header style="height: 80px; background-color:rgb(15, 15, 15);margin:0;">     
+            <container style="display:flex;">
+                
+                <div style="background-color: rgb(255, 255, 255); width:110px; height:70px;padding-top:8px;padding-left:1em;">
+                <a style="text-decoration: none;" href="">
+                    <img href="" src="/Loja-de-Instrumentos-Musicais/logo-loja/violao.png" alt="logo" width="100">
+                </a>
+            </div> 
+            <div style="margin-left: 1em;">
+                <h1 style="color: azure;">Music Store</h1> 
+            </div>
+            </container>
     </header>
 
-        <main style="width: 95%;height: 900px;margin: auto;margin-left:0"> 
+        <main style="height: 900px;margin: auto;margin-left:0"> 
                         
-            <section name="Tables" style="width: 100%; height: 420px; background-color:rgb(181, 181, 237);padding: 2rem;text-align:left;float:inline-start;margin-top: 5em;">
+            <section name="Tables" style="height: 420px; background-color:rgb(181, 181, 237);padding: 2rem;text-align:left;">
 
                 <h2 style="margin-bottom: 2rem;">Melhores Instrumentos Musicais, pelos melhores preços.</h2>
                 
@@ -79,7 +82,7 @@
 
     </section>
 
-    <section name="Info" style="width: 100%;height: 300px;float:left;background-color:antiquewhite;padding: 2rem;">
+    <section name="Info" style="height: 300px;background-color:antiquewhite;padding: 2rem;">
         <div style="width: 60%; float:left;">
             <h2>Converse com os melhores do Mercado!</h2>
             <p>Os melhores luthiers se econtram aqui! <a href="">Entre em contato conosco!</a></p>
@@ -90,18 +93,58 @@
                     <img src="/Loja-de-Instrumentos-Musicais/imagens/luthier.png" alt="luthier trabalhando" width="360" height="200">
                 </div>
             </section>        
-            <section name="Form" style="width: 100%;height:380px;background-color:rgb(241, 157, 47);padding: 2rem;float:inline-start;">
+            <section name="Form" style="height:380px;background-color:rgb(255, 255, 255);padding: 2rem;">
 
 
-                    <form style="width: 50%;margin:auto;" action="" method="post">
+                    <form style="margin:auto;" action="/Loja-de-Instrumentos-Musicais/index.html" method="post" target="_self">
                         
-                        <fieldset name="purchaseArea">
-                        <legend>Faça sua compra personalizada de violões aqui</legend>
-                        <label for="marca">Marca</label>
+                        <fieldset name="purchaseArea" style="height: 100px;border:none;padding:1em;margin-bottom: 4em;">
+                        <legend>Escolha sua marca de preferência:</legend>
+                        
+                        <input type="radio" id="martin" name="marca" value="martin">
+                        <label for="martin"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/804.jpg" alt="martin"></label>
+                        <input type="radio" id="blackstar" name="marca" value="blackstar">
+                        <label for="blackstar"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/793.jpg" alt="blackstar"></label>
+                        <input type="radio" id="yamaha" name="marca" value="yamaha">
+                        <label for="yamaha"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/857.jpg" alt="yamaha"></label>                        
+                        <input type="radio" id="casio" name="marca" value="casio">
+                        <label for="casio"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/1007.jpg" alt="casio"></label>
+                        <input type="radio" id="roland" name="marca" value="roland">
+                        <label for="roland"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/877.jpg" alt="roland "></label>                        
+                        <input type="radio" id="fender" name="marca" value="fender">
+                        <label for="fender"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/791.jpg" alt="fender"></label>
+                        <input type="radio" id="tagima" name="marca" value="tagima">
+                        <label for="tagima"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/827.jpg" alt="Tagima"></label><br>
+                        <input type="radio" id="shure" name="marca" value="shure">
+                        <label for="shure"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/974.jpg" alt="Shure"></label>
+                        <input type="radio" id="ibanez" name="marca" value="ibanez">
+                        <label for="ibanez"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/847.jpg" alt="Ibanez" width="140" height="40"></label>
+                        <input type="radio" id="gibson" name="marca" value="gibson">
+                        <label for="gibson"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/803.jpg" alt="Gibson"></label>
+
+                        <input type="radio" id="sigma" name="marca" value="sigma">
+                        <label for="sigma"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/SIGMA.png" alt="SIGMA"></label>
+
+                        <input type="radio" id="boss" name="marca" value="boss">
+                        <label for="boss"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/806.jpg" alt="BOSS"></label>
+
+                        <input type="radio" id="takamine" name="marca" value="takamine">
+                        <label for="takamine"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/872.jpg" alt="Takamine"></label>
+
+                        <input type="radio" id="epiphone" name="marca" value="epiphone">
+                        <label for="epiphone"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/846.jpg" alt="Epiphone"></label>
+
+                        </fieldset>
+
+                        <fieldset style="margin-top: 4em;width:50%;margin:auto;">
+                            <legend>Insira suas informações</legend>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Nome</label>                            
                         </fieldset>
                     
                     </form>
                 
+
             </section> 
         </main>
 
@@ -110,9 +153,7 @@
     
 
     <!--rodapé-->
-    <footer style="width: 88%;height: 10%;background-color:powderblue;padding:5rem;">
-        <p>Bom dia</p>
-    </footer>
+    
     
     
 </body>
