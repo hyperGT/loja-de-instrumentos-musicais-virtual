@@ -12,7 +12,7 @@
         
         
         <!--cabeçalho-->
-        <header style="height: 80px; background-color:rgb(15, 15, 15);margin:0;">     
+        <header style="width:100%;height: 80px; background-color:rgb(15, 15, 15);position:fixed;bottom:574px">     
             <container style="display:flex;">
                 
                 <div style="background-color: rgb(255, 255, 255); width:110px; height:70px;padding-top:8px;padding-left:1em;">
@@ -20,15 +20,15 @@
                     <img href="" src="/Loja-de-Instrumentos-Musicais/logo-loja/violao.png" alt="logo" width="100">
                 </a>
             </div> 
-            <div style="margin-left: 1em;">
-                <h1 style="color: azure;">Music Store</h1> 
+            <div style="margin-left: 1em;padding-bottom: 5em">
+                <h1 style="color: white;">GT Music Store</h1> 
             </div>
             </container>
     </header>
 
-        <main style="height: 900px;margin: auto;margin-left:0"> 
+        
                         
-            <section name="Tables" style="height: 420px; background-color:rgb(181, 181, 237);padding: 2rem;text-align:left;">
+            <section name="Tables" style="margin-top:5em;height: 420px; background-color:rgba(248, 248, 248, 0.875);padding: 2rem;text-align:left;">
 
                 <h2 style="margin-bottom: 2rem;">Melhores Instrumentos Musicais, pelos melhores preços.</h2>
                 
@@ -44,7 +44,7 @@
 
                 <section style="display: flex;">
 
-                    <div name="tabela" style="width:50%;">
+                    <container name="tabela" style="width:50%;">
                         <!--uma tabela de preços e produtos (pelo menos 3 itens)-->
                         <table style="width: 80%;border:1px solid black; text-align:left;margin-bottom: 10px;border-collapse:collapse;margin-left:5em;margin-top:1em;" align="left">
                             <tr style="background-color: white;">
@@ -75,32 +75,48 @@
                                     <td style="border:1px solid black;">2.799R$</td>
                                 </tr>
                             </table>
-                    </div>
-                    
-                        <iframe width="560" height="215" src="https://www.youtube.com/embed/Pg_Xv0EnkWo?si=VtHDl8g9eYx7N9UK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                        </container>
+                    <container >
+                        <iframe width="560" height="215" src="https://www.youtube.com/embed/m0E2-CSDUYY?si=2m8gir_AcoNhK5D1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                 
+                    </container>
                 </section>
 
     </section>
 
     <section name="Info" style="height: 300px;background-color:antiquewhite;padding: 2rem;">
-        <div style="width: 60%; float:left;">
+        <container style="width: 60%; float:left;">
             <h2>Converse com os melhores do Mercado!</h2>
             <p>Os melhores luthiers se econtram aqui! <a href="">Entre em contato conosco!</a></p>
             <h3 style="padding: 3rem 0 0 0.5rem;">Faça seu pedido preenchendo o formulário abaixo <a style="text-decoration: none;" href="">&#128071;</a></h3>
             <h5 style="padding-left: 1.5rem;font-weight: lighter;">É rapidinho!</h5>
-        </div>
-        <div style="width: 40%;float:right;">
+        </container>
+        <container style="width: 40%;float:right;margin-top:24px;">
                     <img src="/Loja-de-Instrumentos-Musicais/imagens/luthier.png" alt="luthier trabalhando" width="360" height="200">
-                </div>
-            </section>        
-            <section name="Form" style="height:380px;background-color:rgb(255, 255, 255);padding: 2rem;">
-
-
-                    <form style="margin:auto;" action="/Loja-de-Instrumentos-Musicais/index.html" method="post" target="_self">
-                        
-                        <fieldset name="purchaseArea" style="height: 100px;border:none;padding:1em;margin-bottom: 4em;">
+                </container>
+            </section> 
+            
+            
+            <section name="Form" style="height:560px;background-color:rgb(255, 255, 255);padding: 2rem;">
+                
+                
+                <form style="margin:auto;" action="/Loja-de-Instrumentos-Musicais/index.html" method="post" target="_self">
+                    
+                    <fieldset style="margin-top: 4em;width:50%;margin:auto;">
+                        <legend>Compra do produto</legend>
+                        <label for="instrumento">Escolha o produto</label>
+                        <select id="instrumento" name="instrumento">
+                            <option value="teclado">Teclado</option>
+                            <option value="violão">Violão</option>
+                            <option value="caixa-amplificada">Caixa Amplificadora</option>
+                            <option value="guitarra">Guitarra</option>
+                            <option value="bateria-acustica">Bateria Acústica</option>
+                        </select>                        
+                    </fieldset>
+                    
+                    <fieldset name="escolha-a-marca" style="height: 100px;border:none;padding:1em;margin-bottom: 11em;margin-top:2em;">
                         <legend>Escolha sua marca de preferência:</legend>
                         
+                        <legend style="margin-bottom: 2em; color:red;" >Caso não queira uma marca específica, apenas deixe em branco</legend>
                         <input type="radio" id="martin" name="marca" value="martin">
                         <label for="martin"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/804.jpg" alt="martin"></label>
                         <input type="radio" id="blackstar" name="marca" value="blackstar">
@@ -132,29 +148,96 @@
                         <label for="takamine"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/872.jpg" alt="Takamine"></label>
 
                         <input type="radio" id="epiphone" name="marca" value="epiphone">
-                        <label for="epiphone"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/846.jpg" alt="Epiphone"></label>
-
-                        </fieldset>
-
-                        <fieldset style="margin-top: 4em;width:50%;margin:auto;">
+                        <label for="epiphone"><img src="https://recursos.madeinbrazil.com.br/i/fabricante/846.jpg" alt="Epiphone"></label> <br>
+                        
+                        <input style="margin: 4em 2em 0;" type="reset" value="Desfazer escolha">
+                        
+                    </fieldset>
+                    
+                        <fieldset style="width:50%;margin:auto;">
                             <legend>Insira suas informações</legend>
-                            <input type="text" name="name" id="name">
-                            <label for="name">Nome</label>                            
+                            <input  style="margin-bottom: 5px;" type="text" name="name" id="name">
+                            <label for="name">Nome</label>   
+                            <input type="email" name="email" id="email"> 
+                            <label for="email">Email</label> <br>
+                            <input type="text" name="telefone" id="telefone">
+                            <label for="telefone">Telefone</label>   <br> 
+                            <input style="margin: 2em 2em 1em;width:100px;" type="submit" value="Enviar">
+                            <input style="margin: 0 0 1em;width:100px;" type="reset" value="Apagar">
                         </fieldset>
                     
                     </form>
                 
 
             </section> 
-        </main>
+            <!--rodapé-->
+            <footer style="height: 210px;background-color:rgb(141, 195, 242);padding:5em;display:flex;">
+                <container style="width: 200px;height:110px;background-color:rgb(255, 255, 255);text-align:center;padding:1em;">
+                    <p>Siga-nos</p>
+                    <a style="text-decoration: none;" href="https://www.instagram.com/" target="_blank">
+                        <img src="https://cdn.discordapp.com/attachments/1225562190367424674/1225562253579911188/instagram.png?ex=662194cb&is=660f1fcb&hm=624969c27305538a7a683adce613ee315bcc1c9b71af9dc1bb38bac7764f5f3a&" alt="Instagram" width="30" height="30">
+                    </a>
+                    <a style="margin: 0 5px 0;" href="https://www.facebook.com/" target="_blank">
+                        <img src="https://cdn.discordapp.com/attachments/1225562190367424674/1225562487982657656/facebook.png?ex=66219502&is=660f2002&hm=f3df3bd8e6656c25dc54127c96720b9a830eaec1a8b8a7c67ed3193ace518a49&" alt="Facebook" width="30" height="30">
+                    </a>
+                </container>
+                <container style="width: 200px;height:180px;background-color:aliceblue;text-align:center;padding:1em;">
+                    <h5 >Central de atendimento</h5>
+                    <pre style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:11px;">
+        Music Store - GT Music store
+        Central de Atendimento:
+        Ficou na dúvida?
+Acesse nossos canais de atendimento:
+       <b>sac@gtmusic.com.br</b>
 
-    
-    
-    
+        ou
+        <b>Telefone Fixo (11) 5094-4466</b>
+                </pre>
+                   
+                </container>
 
-    <!--rodapé-->
-    
-    
+                <container style="width: 200px;height:225px;background-color:white;text-align:center;padding:1em;">
+                    <h5>Sobre nós</h5>
+
+                    <p style="font-size: 12px;">Desde 2025 fazendo o mundo girar com nossos
+                        incriveis instrumentos musicais de altissima qualidade.
+                        Temos a nossa disposição os melhores luthieres do mercado, trabalhamos
+                        importando todos os tipos de instrumentos de várias fabricantes para personalização, tudo para que você encontre, aqui, o instrumento que melhor se adequa ao seu estilo.
+                    </p>
+                   
+                   
+                </container>
+
+                <container style="width: 200px;height:225px;background-color:aliceblue;text-align:center;padding:1em;">
+                    <h5>Dúvidas</h5>
+
+                    <a style="text-decoration: none;" href="">Formas de pagamento</a>
+                    <a style="text-decoration: none;" href="">Processo de entrega</a>
+                    <a style="text-decoration: none;" href="">Trocas e devoluções</a>
+                    <a style="text-decoration: none;" href="">Política de Privacidade</a>
+                    <a style="text-decoration: none;" href="">Dúvidas frequentes</a>
+                    <a style="text-decoration: none;" href="">Regras do site</a>
+                   
+                   
+                </container>
+                
+                <container style="width: 200px;height:225px;background-color:white;text-align:center;padding:1em;">
+                    <h5>Formas de pagamento</h5>
+
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-boleto.svg" alt="boleto" width="50" height="50">
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-visa.svg" alt="visa" width="50" height="50">
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-mastercard.svg" alt="mastercard" width="50" height="50">
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-aura.svg" alt="aura" width="50" height="50">
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-diners.svg" alt="diners club international" width="50" height="50">
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-hipercard.svg" alt="hipercard" width="50" height="50">
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-american-express.svg" alt="american express" width="50" height="50">
+                    <img src="https://recursos.madeinbrazil.com.br/i/SVG-formasPagamento/footer-pagamento-elo.svg" alt="elo" width="50" height="50">
+
+                   
+                   
+                </container>
+
+            </footer>
     
 </body>
 </html>
